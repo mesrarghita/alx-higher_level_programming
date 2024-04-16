@@ -1,20 +1,8 @@
 #!/usr/bin/python3
-"""
-Module 2-is_same_class
-
-Contains method is_same_class
-returns True if object is exactly an instance of specified class
-"""
+"""A Module is define the is_same_class function"""
 
 
 def is_same_class(obj, a_class):
-    """
-    Notes:
-        use type() to get specific class
-        use isinstance() to get class and any parent classes too
-        use issubclass() to get what object is a subclass of
-
-    Return:
-        True if obj is exactly an instance of specified class
-    """
+    """returns True or False based on inheritance"""
     return type(obj) == a_class
+
