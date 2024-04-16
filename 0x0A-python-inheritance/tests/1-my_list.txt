@@ -1,19 +1,32 @@
-> > > MyList = __import__('1-my_list').MyList
+##1-my_list.py
 
-> > > my_list = MyList()
-> > > my_list.append(1)
-> > > my_list.append(4)
-> > > my_list.append(2)
-> > > my_list.append(3)
-> > > my_list.append(5)
+--------------
 
-> > > print(my_list)
-[1, 4, 2, 3, 5]
+    >>> MyList = __import__('1-my_list').MyList
 
-> > > my_list.print_sorted()
-[1, 2, 3, 4, 5]
+--------------
 
-> > > print(my_list)
-[1, 4, 2, 3, 5]
+    >>> lst = MyList()
+    >>> lst.append(4)
+    >>> lst.append(3)
+    >>> lst.append(2)
+    >>> lst.append(1)
+    >>> lst.append(5)
+    >>> print(lst)
+    [4, 3, 2, 1, 5]
+    >>> lst.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(lst)
+    [4, 3, 2, 1, 5]
+
+    >>> lst_2 = MyList()
+    >>> lst_2.print_sorted()
+    []
+    >>> lst_3 = MyList("Aadel")
+    >>> print(lst_3)
+    ['A', 'a', 'd', 'e', 'l']
+    >>> lst_3.print_sorted()
+    ['A', 'a', 'd', 'e', 'l']
 
 
+--------------
