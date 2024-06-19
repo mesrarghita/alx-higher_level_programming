@@ -1,21 +1,19 @@
-#!/usr/bin/node
+// Filename: 3-rectangle.js
 
 class Rectangle {
-  constructor (w, h) {
-    if (w > 0 && h > 0) {
-      this.width = w;
-      this.height = h;
+  constructor(w, h) {
+    if (w <= 0 || h <= 0) {
+      // Create an empty object if w or h is not a positive integer
+      return {};
     }
-  }
-  print () {
-    let rows, columns;
 
-    for (rows = 0; rows < this.height; rows++) {
-      let str = '';
-      for (columns = 0; columns < this.width; columns++) {
-        str += 'X';
-      }
-      console.log(str);
+    this.width = w;
+    this.height = h;
+  }
+
+  print() {
+    for (let i = 0; i < this.height; i++) {
+      console.log('X'.repeat(this.width));
     }
   }
 }
